@@ -320,7 +320,8 @@ export default function Drawer({
             styles.main,
             {
               flexDirection:
-                drawerType === 'permanent' && !isRight ? 'row-reverse' : 'row',
+                //drawerType === 'permanent' && !isRight ? 'row-reverse' : 'row',
+              drawerType === 'permanent' || !isRight ? 'row-reverse' : 'row',
             },
           ]}
         >
